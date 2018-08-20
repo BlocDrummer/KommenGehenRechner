@@ -35,7 +35,6 @@ public class TimePickerFragment extends DialogFragment implements TimePickerDial
             e.printStackTrace();
         }
 
-        Button btnBerechnen = (Button) getActivity().findViewById(R.id.btnBerechnen);
-        btnBerechnen.performClick();
+        ((MainActivity) getActivity()).berechnen();
     }
 }

@@ -35,23 +35,12 @@ public class MainActivity extends AppCompatActivity {
                 fragment.show(getFragmentManager(), "TimePicker");
             }
         });
-
-        Button btnBerechnen = (Button) findViewById(R.id.btnBerechnen);
-        btnBerechnen.setOnClickListener(
-            new Button.OnClickListener() {
-                public void onClick(View v) {
-                    berechnen();
-                }
-            }
-        );
-
-
     }
 
     /**
      * Berechnet die Gehenzeit aus der Kommenzeit und setzt die Gehenzeit
      */
-    private void berechnen() {
+    public void berechnen() {
         int kommenStunden = Integer.parseInt(etKommenZeit.getText().toString().split(":")[0]);
         int kommenMinuten = Integer.parseInt(etKommenZeit.getText().toString().split(":")[1]);
 

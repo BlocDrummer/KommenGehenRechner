@@ -13,7 +13,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Kommenzeit:" />
+        android:text="Kommenzeit:"
+        android:labelFor="@id/etKommenZeit"/>
 
     <EditText
         android:id="@+id/etKommenZeit"
@@ -27,6 +28,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:labelFor="@id/tvGehenZeit"
         android:text="Gehenzeit:" />
 
     <TextView
@@ -34,11 +36,5 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="100sp" />
-
-    <Button
-        android:id="@+id/btnBerechnen"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Berechnen" />
 
 </LinearLayout>
